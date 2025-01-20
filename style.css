@@ -6,7 +6,7 @@
 body{
     background: rgb(247, 247, 247);
     font-family: Quicksand;
-    border: 3px solid black;
+    /* border: 3px solid black; */
 }
 .black{
     color: rgb(17, 17, 17);
@@ -44,11 +44,17 @@ nav{
     max-width: 1440px;
     padding: 20px 20px;
     margin: 0 auto;
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 .navbar-container{
+    max-width: 1160px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
+    /* border: 3px solid purple; */
+}
+.line{
+    visibility: hidden;
 }
 .navbar-box1{
     display: flex;
@@ -64,7 +70,7 @@ nav{
 }
 .navbar-box2 ul a{
     text-decoration: none;
-    margin-right: 25px;
+    padding-right: 25px;
     font-family: Quicksand;
     font-size: 20px;
     font-weight: 500;
@@ -76,10 +82,62 @@ nav{
     line-height: 30px;
 }
 
+/* banner style */
+.banner{
+    max-width: 1159px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 3px solid green; */
+}
+.banner-container{
+    max-width: 640px;
+}
+.banner-title{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 61px;
+}
+.banner-content{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 20px 0px;
+}
+.banner .btn-secondary{
+    padding: 5px;
+    border-radius: 12px;
+    background-color: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    width: 197px;
+    border: none;
+}
+.banner-img{
+    max-width: 469px;
+    /* border: 3px solid blue; */
+}
+.banner-img img{
+    width: 100%;
+}
+
 
 /* responsive media query */
 /* small device */
 @media screen and (max-width: 576px) {
+    nav{
+        max-width: 390px;
+    }
+    .navbar-container{
+        max-width: 358px;
+    }
+    .line{
+        visibility: visible;
+    }
     .navbar-title,
     .navbar-box2,
     .btn-primary{
@@ -89,5 +147,22 @@ nav{
         visibility: visible;
         margin-top: 15px;
         width: 30px;
+    }
+    .line{
+        visibility: visible;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        text-align: center;
+        max-width: 357px;
+    }
+    .banner-container{
+        max-width: 357px;
+    }
+    .banner-img{
+        max-width: 337px;
+    }
+    .banner-img img{
+        width: 100%;
     }
 }
