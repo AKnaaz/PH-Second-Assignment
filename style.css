@@ -249,16 +249,18 @@ nav{
     background: rgb(255, 255, 255);
     border-radius: 16px;
 }
+.stories-img1 img{
+    border-radius: 16px 16px 0px 0px;
+}
 .stories-box2{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 15px;
     column-gap: 15px;
 }
-.stories-img1 img{
-    border-radius: 16px 16px 0px 0px;
-}
-.stories .btn-stories{
+
+.stories .div-stories{
+    width: 120px;
     border-radius: 47.93px;
     background-color: rgb(60, 216, 232);
     font-family: Rammetto One;
@@ -292,10 +294,11 @@ nav{
     border-radius: 16px;
     background: rgb(255, 255, 255);
 }
-.stories-item .btn-stories{
+.stories-item .div-stories{
     background-color: rgb(149, 178, 38);
 }
-.btn-stories3{
+.div-stories3{
+    width: 120px;
     background: rgb(93, 88, 240);
     border-radius: 47.93px;
     font-family: Rammetto One;
@@ -364,4 +367,27 @@ nav{
     .curriculum-icon-box{
         visibility: hidden;
     }
-}
+    .stories-box1{
+        display: none;
+    }
+    .stories{
+        width: 500px;
+    }
+    .stories-box2{
+        padding-left: 70px;
+    }
+    .stories-item{
+        max-width: 173px;
+    }
+    .stories-img img{
+        width: 100%;
+    }
+    .stories .div-stories{
+        width: 90px;
+        font-size: 7px;
+    }
+    .div-stories3{
+        width: 90px;
+        font-size: 7px;
+    }
+}    
