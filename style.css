@@ -87,6 +87,14 @@ body{
     border: none;
 }
 
+/* marquee style */
+marquee {
+    box-shadow: 0 1px 3px lightgray;
+    background-color: rgb(1, 172, 253);
+    padding: 10px;
+    font-weight: 400;
+}
+
 /* nav style */
 nav{
     max-width: 1440px;
