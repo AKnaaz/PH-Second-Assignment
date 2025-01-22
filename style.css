@@ -228,6 +228,9 @@ nav{
     background-color: rgb(254, 163, 1);
     color: rgb(255, 255, 255);
 }
+.curriculum-icon:hover{
+    background-color: darkorange;
+}
 
 /* stories style */
 .stories{
