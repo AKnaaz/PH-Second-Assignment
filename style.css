@@ -6,7 +6,6 @@
 body{
     background: rgb(247, 247, 247);
     font-family: Quicksand;
-    /* border: 3px solid black; */
 }
 .black{
     color: rgb(17, 17, 17);
@@ -100,19 +99,13 @@ nav{
     max-width: 1440px;
     padding: 20px 20px;
     margin: 0 auto;
-    /* border: 3px solid red; */
 }
 .navbar-container{
     max-width: 1160px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    
-    /* border: 3px solid purple; */
 }
-/* .line{
-    visibility: hidden;
-} */
 .navbar-box1{
     display: flex;
     align-items: center;
@@ -146,7 +139,6 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 3px solid green; */
 }
 .banner-container{
     max-width: 640px;
@@ -164,7 +156,6 @@ nav{
 }
 .banner-img{
     max-width: 469px;
-    /* border: 3px solid blue; */
 }
 .banner-img img{
     width: 100%;
@@ -443,12 +434,14 @@ footer{
         border-top: 0px;
         border-bottom: 0px;
         padding-top: 30px;
+        margin-top: 30px;
     }
     .curriculum-container{
         grid-template-columns: repeat(1, 1fr);
     }
     .curriculum-box{
         max-width: 543px;
+        padding-bottom: 10px;
     }
     .curriculum-icon-box{
         visibility: hidden;
